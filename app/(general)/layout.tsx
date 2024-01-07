@@ -1,4 +1,4 @@
-
+import { Navbar } from "@/components";
 
 
 export default function GeneralLayout({
@@ -7,8 +7,11 @@ export default function GeneralLayout({
  children: React.ReactNode;
 }) {
   return (
-    <div className="flex flex-col items-center p-24">
-      {children}
-    </div>
+    <>
+      <Navbar />
+      <main className="flex flex-col items-center p-24">
+        {children}
+      </main>
+    </>
   );
 }
